@@ -176,6 +176,31 @@ function Index() {
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div className="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                                    <div className="bg-icon flex-shrink-0 mb-3">
+                                        <i className="fa fa-code fa-2x text-dark"></i>
+                                    </div>
+                                    <div className="ms-sm-4">
+                                        <h4 className="mb-3">Web Design</h4>
+                                        <h6 className="mb-3">Start from <span className="text-primary">$199</span></h6>
+                                        <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div className="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                                    <div className="bg-icon flex-shrink-0 mb-3">
+                                        <i className="fa fa-laptop-code fa-2x text-dark"></i>
+                                    </div>
+                                    <div className="ms-sm-4">
+                                        <h4 className="mb-3">UI/UX Design</h4>
+                                        <h6 className="mb-3">Start from <span className="text-primary">$199</span></h6>
+                                        <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
