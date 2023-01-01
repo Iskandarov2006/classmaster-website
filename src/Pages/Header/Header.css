@@ -1,0 +1,26 @@
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    text-align: center;
+}
+.Header header h2{
+    font-size: 5rem;
+    font-weight: 800;
+    width: 900px;
+    text-align: center;
+    color: black;
+}
+
+
+.Header header button{
+    width: 200px;
+    height: 80px;
+    background: #006eff80;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 800;
+    margin: 50px 0 0 0;
+}

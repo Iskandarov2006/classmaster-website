@@ -1,0 +1,74 @@
+.classmasternav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  30px;
+    border-bottom: 1px solid #f1eaea;
+}
+ ul div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ ul li {
+    margin: 0 35px;
+    list-style: none;
+}
+ ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.navul{
+    margin-top: -4rem;
+    float: right;
+}
+.classmasternav .Logo button{
+    display: none;
+}
+.classmasternav .Logo h4{
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 1100px) {
+     ul{
+        display: none;
+    }
+    .classmasternav .Logo button{
+        display: block;
+        font-size: 1.7rem;
+        border: none;
+        background: rgba(0, 0, 0, 0.0);
+        cursor: pointer;
+    }
+    .classmasternav .Logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .shownav{
+        display: block !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        animation: shownav 0.5s;
+        overflow: hidden;
+        background: #e7e6e6;
+    }
+    @keyframes shownav {
+        0%{
+            height: 10px;
+        }
+        100%{
+            height: 180px;
+        }
+    }
+    .shownav div {
+        display: block;
+        text-align: center;
+        line-height: 30px;
+    }
+}
