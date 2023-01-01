@@ -1,4 +1,4 @@
-.ModalMessage{
+.ModalMessage {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
@@ -10,17 +10,24 @@
     align-items: center;
     justify-content: center;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 @keyframes modalMessage {
-    0%{
+    0% {
         position: relative;
         top: -50rem;
     }
-    100%{
+
+    100% {
         position: relative;
         top: 0%;
     }
 }
-.ModalMessage .form{
+
+.ModalMessage .form {
     width: 350px;
     height: 400px;
     background: white;
@@ -31,15 +38,17 @@
     justify-content: center;
     animation: modalMessage 0.5s;
 }
-.ModalMessage .form input{
+
+.ModalMessage .form input {
     display: block;
     width: 250px;
-    padding:5px 10px;
+    padding: 5px 10px;
     outline: none;
     border: 1px solid #959595;
     border-radius: 15px;
 }
-.ModalMessage .form textarea{
+
+.ModalMessage .form textarea {
     display: block;
     margin: 15px 0;
     width: 250px;
@@ -47,10 +56,12 @@
     padding: 5px;
     outline: none;
 }
-.ModalMessage .form form label{
+
+.ModalMessage .form form label {
     margin: 10px;
 }
-.ModalMessage .form form button{
+
+.ModalMessage .form form button {
     width: 100%;
     height: 45px;
     border: 1px solid blue;
@@ -62,7 +73,8 @@
     letter-spacing: 5px;
     border-radius: 8px;
 }
-.ModalMessage .form form button:hover{
+
+.ModalMessage .form form button:hover {
     width: 100%;
     height: 45px;
     border: 1px solid #6363f5;
@@ -75,10 +87,83 @@
     transition: all 0.3s;
 }
 
-.ModalMessage .form form .fa-close{
+.ModalMessage .form form .fa-close {
     display: block;
     float: right;
     font-size: 1.4rem;
     margin-top: -15px;
+    cursor: pointer;
+}
+
+
+
+
+
+.ModalLibrary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.Library {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px white;
+}
+.Library .Books{
+    height: 270px;
+    overflow-y: scroll;
+}
+.ModalLibrary .Library .Books .Book{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    background: #ffeded;
+    padding: 5px;
+    border-radius: 8px;
+}
+.ModalLibrary .Library .Books .Book button{
+    margin: 0 15px 0 45px;
+    padding: 10px;
+    background: #84d30f;
+    transition: all 0.5s;
+    color: white;
+    border: 1px solid #84d30f;
+    border-radius: 9px;
+}
+.ModalLibrary .Library .Books .Book button:hover{
+    margin: 0 13px 0 45px;
+    padding: 10px;
+    background: #9cee20;
+    color: white;
+    border: 1px solid #9bf01c;
+    transition: all 0.5s;
+    border-radius: 9px;
+}
+.ModalLibrary .Library .Books .headerLibrary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 32px 15px 0;
+}
+.ModalLibrary .Library .Books .headerLibrary i{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #6363f5;
     cursor: pointer;
 }
